@@ -1,12 +1,10 @@
 public class Main {
     public static void main(String[] args) {
-        int[] values = {100, 52, 43, 99, 42, 40, 91};
-        
+        int[] arrayvalues = {100, 52, 43, 99, 42, 40, 91};
         int sum = 0;
-        
-        for (int num : values) {
-            if (num % 5 == 0 && num % 2 == 0) {
-                sum = sum+num;
+        for (int number : values) {
+            if (number % 5 == 0 && number % 2 == 0) {
+                sum = sum+number;
             }
         }
         

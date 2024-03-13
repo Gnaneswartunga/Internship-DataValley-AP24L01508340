@@ -5,7 +5,7 @@ public class Main {
         int sum = 0;
         for (int number : values) 
         {
-            if (number % 5 == 0 && number % 2 == 0) 
+            if (number%5 == 0 && number%2 == 0) 
             {
                 sum = sum+number;
             }

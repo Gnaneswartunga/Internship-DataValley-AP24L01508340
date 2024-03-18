@@ -1,0 +1,28 @@
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.io.ObjectInputStream;
+
+class Product implements java.io.Serializable {
+  private int id;
+  private String name;
+  private String category;
+  private double price;
+
+  // Constructor, getters, and setters
+}
+
+public class DeserializationDemo {
+  public static void main(String[] args) {
+    try (FileInputStream fileIn = new FileInputStream("product.ser");
+         ObjectInputStream in = new ObjectInputStream(fileIn)) {
+      Product product = (Product) in.readObject();
+      System.out.println("Deserialized Product:");
+      System.out.println("ID: " + product.getId());
+      System.out.println("Name: " + product.getName());
+      System.out.println("Category: " + product.getCategory());
+      System.out.println("Price: " + product.getPrice());
+    } catch (IOException | ClassNotFoundException e) {
+      e.printStackTrace();
+    }
+  }
+}

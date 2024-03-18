@@ -1,0 +1,48 @@
+class Organization implements Cloneable {
+  private String organizationCode;
+  private String organizationName;
+  private Address organizationAddress; // Assuming Address is a separate class
+
+  public Organization(String organizationCode, String organizationName, Address organizationAddress) {
+    this.organizationCode = organizationCode;
+    this.organizationName = organizationName;
+    this.organizationAddress = organizationAddress;
+  }
+
+  public void printDetails() {
+    System.out.println("Organization Code: " + organizationCode);
+    System.out.println("Organization Name: " + organizationName);
+    System.out.println("Organization Address: ");
+    organizationAddress.printAddress(); // Assuming Address has a printAddress method
+  }
+
+  @Override
+  public Object clone() throws CloneNotSupportedException {
+    return super.clone();
+  }
+}
+
+class Address {
+  // Implement fields and methods related to Address here
+  public void printAddress() {
+    // Print the address details here
+  }
+}
+
+public class Main {
+  public static void main(String[] args) throws CloneNotSupportedException {
+    Organization org1 = new Organization("ABC123", "My Company", new Address());
+    Organization org2 = (Organization) org1.clone();
+
+    org1.printDetails();
+    System.out.println("\nCopied Organization:");
+    org2.printDetails();
+
+    // Modifying the address in org1 will also modify it in org2 because it's a shallow copy
+    org1.organizationAddress. /* modify address */ ;
+    System.out.println("\nModified Organization 1:");
+    org1.printDetails();
+    System.out.println("\nCopied Organization (address also modified):");
+    org2.printDetails();
+  }
+}

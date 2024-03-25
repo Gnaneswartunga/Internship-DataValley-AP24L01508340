@@ -1,3 +1,8 @@
 
-splite-2 
-1.)Write a Java program to display the patient id, name, problem and bill using JDBC connectivity with Oracle Database.
+splite-2 :
+Assignment-4
+1.) Write a Java program to display the patient id, name, problem and bill using JDBC connectivity with Oracle Database.
+
+Assignment-5
+1.) Write a java program to store  Department(id, name) object in database, use PreparedStatement and required steps to complete the given problem statement.
+Note: use database name: departments and table name: department.

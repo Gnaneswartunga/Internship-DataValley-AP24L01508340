@@ -13,7 +13,7 @@ public class StoreDepartment {
         String password = "SVECIT50";
 
         // Create a Department object
-        Department department = new Department(101, "Engineering");
+        Department department = new Department(250, "Information Technology");
 
         Connection connection = null;
         PreparedStatement statement = null;

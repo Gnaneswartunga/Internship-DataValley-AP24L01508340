@@ -8,7 +8,7 @@ public class StoreDepartment {
 
     public static void main(String[] args) throws Exception {
     	
-        String url = "jdbc:mysql://localhost:3306/datavalley";
+        String url = "jdbc:mysql://localhost:3306/Departments";
         String username = "root";
         String password = "SVECIT50";
 

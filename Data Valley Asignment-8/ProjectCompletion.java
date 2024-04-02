@@ -25,7 +25,7 @@ class Project {
   }
 }
 
-public class Q1 {
+public class ProjectCompletion {
 
   public static void main(String[] args) {
     Scanner scanner = new Scanner(System.in);

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Page</title>
+</head>
+<body>
+    <h2>Sign Up Form</h2>
+    <form action="/submit_form" method="POST" enctype="multipart/form-data">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password" required><br><br>
+
+        <label for="confirm_password">Confirm Password:</label><br>
+        <input type="password" id="confirm_password" name="confirm_password" required><br><br>
+
+        <label for="dob">Date of Birth:</label><br>
+        <input type="date" id="dob" name="dob" required><br><br>
+
+        <label for="gender">Gender:</label><br>
+        <select id="gender" name="gender">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select><br><br>
+
+        <label for="photo">Insert Your Photo:</label><br>
+        <input type="file" id="photo" name="photo" accept="image/*"><br><br>
+
+        <label for="resume">Insert Your Resume:</label><br>
+        <input type="file" id="resume" name="resume" accept=".pdf, .doc, .docx"><br><br>
+
+        <label for="security_question">Security Question:</label><br>
+        <select id="security_question" name="security_question">
+            <option value="q1">What is your nick name?</option>
+            <option value="q2">What city were you born in?</option>
+            <option value="q3">What is the name of your first pet?</option>
+        </select><br><br>
+
+        <input type="checkbox" id="terms" name="terms" required>
+        <label for="terms">I agree to the terms and conditions</label><br><br>
+
+        <input type="submit" value="Register">
+    </form>
+</body>
+</html>
